@@ -1,0 +1,14 @@
+{
+  "component": "simbot.mirai",
+  "code": code,
+  "passwordInfo": {
+    "type": "text",
+    "text": "password"
+  },
+  "config": {
+    "protocol": "IPAD",
+    "deviceInfo": {
+      "type": "file_based"
+    }
+  }
+}
