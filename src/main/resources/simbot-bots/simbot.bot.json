@@ -6,7 +6,7 @@
     "text": "password"
   },
   "config": {
-    "protocol": "IPAD",
+    "protocol": "ANDROID_PHONE",
     "deviceInfo": {
       "type": "file_based"
     }
