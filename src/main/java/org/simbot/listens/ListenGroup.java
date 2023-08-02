@@ -44,12 +44,12 @@ public class ListenGroup {
             if (message instanceof Face) {
                 log.info(MessageFormat.format("[Face表情: {0} ]", ((Face) message).getId()));
             }
-            if (message instanceof At at){
+            if (message instanceof At at) {
                 ID target = at.getTarget();
                 GroupMember member = group.getMember(target);
-                if (member==null){
+                if (member == null) {
                     log.info(MessageFormat.format("[AT消息:未找到目标用户: {0} ]", target));
-                }else {
+                } else {
                     log.info(MessageFormat.format("[AT消息: @{0}( {1} )", member.getNickOrUsername(), member.getId()));
                 }
             }
@@ -74,6 +74,4 @@ public class ListenGroup {
         }
         Msg.GroupMsg(event);
     }
-
-
 }
