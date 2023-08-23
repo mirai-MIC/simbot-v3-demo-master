@@ -41,9 +41,9 @@
         <dependency>
             <groupId>com.aliyun</groupId>
             <artifactId>fix</artifactId>
-            <version>1.9.0</version>
+            <version>1.10.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/fix-protocol-version-1.9.10.mirai2.jar</systemPath>
+            <systemPath>${project.basedir}/lib/fix-protocol-version-1.10.0.mirai2.jar</systemPath>
         </dependency>
 
 
