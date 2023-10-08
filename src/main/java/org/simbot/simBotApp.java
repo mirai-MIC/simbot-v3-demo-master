@@ -11,7 +11,7 @@ import xyz.cssxsh.mirai.tool.FixProtocolVersion;
 @SpringBootApplication
 public class simBotApp {
     public static void main(String... args) {
-        FixProtocolVersion.fetch(BotConfiguration.MiraiProtocol.ANDROID_PHONE,"8.9.63");
+        FixProtocolVersion.fetch(BotConfiguration.MiraiProtocol.ANDROID_PHONE,"8.9.68");
         SpringApplication.run(simBotApp.class,args);
     }
 }
