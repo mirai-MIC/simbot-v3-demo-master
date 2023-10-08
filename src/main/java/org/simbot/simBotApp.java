@@ -2,16 +2,21 @@ package org.simbot;
 
 
 import love.forte.simboot.spring.autoconfigure.EnableSimbot;
-import net.mamoe.mirai.utils.BotConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import xyz.cssxsh.mirai.tool.FixProtocolVersion;
+import top.mrxiaom.qsign.QSignService;
+
+import java.io.File;
 
 @EnableSimbot
 @SpringBootApplication
 public class simBotApp {
     public static void main(String... args) {
-        FixProtocolVersion.fetch(BotConfiguration.MiraiProtocol.ANDROID_PHONE,"8.9.68");
+        // 修复协议版本
+        QSignService.Factory.init(new File("src/main/resources/txlib/8.9.68"));
+        QSignService.Factory.loadProtocols(null);
+        QSignService.Factory.register();
+
         SpringApplication.run(simBotApp.class,args);
     }
 }

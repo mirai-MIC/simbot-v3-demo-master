@@ -38,13 +38,23 @@
             <version>${simbot-component-mirai.version}</version>
         </dependency>
         <!--        导入本地jar-->
+
         <dependency>
-            <groupId>com.aliyun</groupId>
-            <artifactId>fix</artifactId>
-            <version>1.12.0</version>
+            <groupId>com.mic_amy</groupId>
+            <artifactId>qsign</artifactId>
+            <version>1.0.0.beta</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/fix-protocol-version-1.12.0.mirai2.jar</systemPath>
+            <systemPath>${project.basedir}/lib/qsign-1.1.0-beta.mirai2.jar</systemPath>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.mic_any</groupId>-->
+<!--            <artifactId>fix</artifactId>-->
+<!--            <version>1.12.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/lib/fix-protocol-version-1.12.0.mirai2.jar</systemPath>-->
+<!--        </dependency>-->
+
 
 
         <dependency>
