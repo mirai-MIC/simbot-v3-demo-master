@@ -13,7 +13,7 @@ import java.io.File;
 public class simBotApp {
     public static void main(String... args) {
         // 修复协议版本
-        QSignService.Factory.init(new File("src/main/resources/txlib/8.9.68"));
+        QSignService.Factory.init(new File("txlib/8.9.68"));
         QSignService.Factory.loadProtocols(null);
         QSignService.Factory.register();
 
